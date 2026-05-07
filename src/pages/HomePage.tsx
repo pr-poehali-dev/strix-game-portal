@@ -1,5 +1,5 @@
 import MatchCard from "@/components/MatchCard";
-import { matches, tournaments, teams, news } from "@/data/mockData";
+import { matches, tournaments, teams, news, STRYX_LOGO } from "@/data/mockData";
 
 interface HomePageProps {
   onNavigate: (page: string, detail?: { type: string; id: number }) => void;
@@ -63,8 +63,8 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         {/* Decorative logo */}
         <div className="absolute right-16 top-1/2 -translate-y-1/2 hidden lg:block">
           <div className="relative">
-            <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-[var(--stryx-cyan)]/20 to-[var(--stryx-cyan)]/5 backdrop-blur-sm border border-[var(--stryx-cyan)]/20 flex items-center justify-center">
-              <span className="font-rajdhani font-black text-8xl text-[var(--stryx-cyan)]/60">SX</span>
+            <div className="w-52 h-52 rounded-2xl bg-gradient-to-br from-[var(--stryx-cyan)]/10 to-transparent backdrop-blur-sm border border-[var(--stryx-cyan)]/15 flex items-center justify-center">
+              <img src={STRYX_LOGO} alt="STRYX" className="w-44 h-44 object-contain drop-shadow-[0_0_32px_rgba(0,212,245,0.5)]" />
             </div>
             <div className="absolute -inset-4 rounded-3xl border border-[var(--stryx-cyan)]/10" />
           </div>

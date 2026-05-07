@@ -67,20 +67,29 @@ export default function Index() {
         {page === "contacts" && <ContactsPage />}
       </main>
 
-      <footer className="border-t border-white/6 py-8 mt-8">
+      <footer className="mt-16 py-8" style={{
+        background: "rgba(8,12,18,0.7)",
+        backdropFilter: "blur(24px)",
+        borderTop: "1px solid rgba(255,255,255,0.07)",
+      }}>
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-sm bg-[var(--stryx-cyan)] flex items-center justify-center text-black font-rajdhani font-black text-xs">
-              SX
-            </div>
-            <span className="stryx-logo-text text-white/60 text-sm">STRYX</span>
+          <div className="flex items-center gap-3">
+            <img src="https://cdn.poehali.dev/projects/b0c9566a-b610-4e86-a7b1-caf22fe79bbd/bucket/90b57667-8e59-43f3-b007-fcf59527ace9.PNG"
+              alt="STRYX" className="h-7 w-auto object-contain opacity-70" />
+            <span className="stryx-logo-text text-white/40 text-sm">STRYX</span>
           </div>
           <div className="text-white/20 text-xs font-mono text-center">
             © 2026 STRYX Organization · Все права защищены
           </div>
-          <div className="text-white/20 text-xs font-mono">
-            Ctrl+Shift+A — Admin
-          </div>
+          <a
+            href="https://t.me/STRYXCS2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-white/40 hover:text-[var(--stryx-cyan)] transition-colors text-sm font-rajdhani"
+          >
+            <span>📩</span>
+            <span>@STRYXCS2</span>
+          </a>
         </div>
       </footer>
 
